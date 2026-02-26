@@ -1,7 +1,17 @@
 class TaskCli:
+    """
+    Handles the CLI display logic 
+    for showing tasks to the user
+    """
     def print_tasks(self, tasks: list):
+        """
+        Prints the list of tasks in a formatted way
+
+        Parameters:
+            tasks (list): List of Task objects to display.
+        """
         if not tasks:
-            print("No task disponivel")
+            print("No tasks available")
             return None
         
         for task in tasks:

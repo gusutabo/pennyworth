@@ -1,6 +1,6 @@
 # pennyworth
 
- 📋 A lightweight Command Line Interface (CLI) application for managing tasks 
+A lightweight Command Line Interface (CLI) application for managing tasks 
  
 ## How To Run
 
