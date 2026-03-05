@@ -1,3 +1,5 @@
+from colors import Colors
+
 class TaskCli:
     """
     Handles the CLI display logic 
@@ -11,10 +13,10 @@ class TaskCli:
             tasks (list): List of Task objects to display.
         """
         if not tasks:
-            print("No tasks available")
+            print(Colors.RED + "Error: no tasks available" + Colors.RESET)
             return None
         
+        print(Colors.BLUE + "*) Tasks:" + Colors.RESET)
         for task in tasks:
             status = "x" if task.completed else " "
             print(f"[{status}] {task.id} -> {task.name} {task.description}")    
-            
